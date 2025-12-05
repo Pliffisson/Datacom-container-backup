@@ -1,0 +1,18 @@
+services:
+  datacom-backup:
+    build: .
+    container_name: datacom-backup
+    environment:
+      - TZ=${TZ:-UTC}
+    env_file:
+      - .env
+    volumes:
+      - ./backups:/backups
+    networks:
+      - datacom-network
+    # Run once and exit. For cron-like behavior, you'd use a cron container or external scheduler.
+    # To keep it simple as requested, this runs the script once.
+
+networks:
+  datacom-network:
+    driver: bridge

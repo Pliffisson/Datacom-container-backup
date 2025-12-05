@@ -1,0 +1,6 @@
+# Run backup every minute   
+# * * * * * root . /etc/environment; /usr/local/bin/python /app/src/backup.py >> /var/log/cron.log 2>&1
+# Run backup every hour
+# 0 * * * * root . /etc/environment; /usr/local/bin/python /app/src/backup.py >> /var/log/cron.log 2>&1
+# Run backup every day at 9:00 AM
+0 22 * * * root . /etc/environment; /usr/local/bin/python /app/src/backup.py >> /var/log/cron.log 2>&1
