@@ -144,8 +144,8 @@ As notificações incluem:
 4. Adicione no `.env`:
 
 ```ini
-TELEGRAM_BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrsTUVwxyz
-TELEGRAM_CHAT_ID=987654321
+TELEGRAM_BOT_TOKEN=your_bot_token
+TELEGRAM_CHAT_ID=your_chat_id
 ```
 
 ---
